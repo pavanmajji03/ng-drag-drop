@@ -16,7 +16,7 @@ import { NgDragDropService } from './services/ng-drag-drop.service';
   ]
 })
 export class NgDragDropModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<NgDragDropModule> {
     return {
       ngModule: NgDragDropModule,
       providers: [NgDragDropService]
